@@ -1,0 +1,78 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .logo {
+        margin-bottom: 1rem;
+    }
+    
+    .menu-toggle {
+        display: flex;
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+    
+    #navbar {
+        display: none;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    
+    #navbar.active {
+        display: block;
+    }
+    
+    #navbar ul {
+        flex-direction: column;
+    }
+    
+    #navbar li {
+        margin: 0.5rem 0;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-content, .contact-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .testimonial-text {
+        font-size: 1.1rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
